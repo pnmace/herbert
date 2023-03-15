@@ -34,6 +34,8 @@ async def parse_message(message):
         await commands.parse_command(message)
         return
 
+    # this is silly and is only here for nostalgic purposes
+    # r!duck ely
     if duck:
         if get_timeout(message):
             await commands.duck(message)
